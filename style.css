@@ -1,4 +1,4 @@
-
+body{
         .box{
             display: flex;
         }
@@ -96,4 +96,4 @@ body {
 
 #contactform button:hover {
   background-color: #0056b3;
-}
+}}
