@@ -1,42 +1,59 @@
 body {
-   display:flex;
-  font-family: sans-serif;
-  background-color:powderblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
   display: flex;
-  justify-content:top;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  padding-top: 80px; /* Prevents content from hiding under fixed header */
 }
 
 .box {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
 }
+
 div {
-  padding: 20px;
-  border: 2px solid black;
-  width: 500px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
 .cards-container { 
   display: flex; 
   gap: 20px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
 .card { 
   flex: 1; 
+  min-width: 280px;
   padding: 24px; 
-  background: #f8f4f4;
-  border: 1px solid #ccc;
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
-  background-color: rgb(198, 237, 237);
-  padding: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
   top: 0;
   left: 0;
 }
@@ -46,50 +63,68 @@ header ul {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content:top;
+  justify-content: center;
+  gap: 30px;
 }
 
-header ul li {
-  padding: 0 30px;
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+header ul li a:hover {
+  color: #007bff;
 }
 
 #contactform {
-  background: #f8eeee;
+  background: #ffffff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 360px;
+  max-width: 380px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  margin: 20px auto;
 }
 
 #contactform label {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
+  color: #444;
 }
 
 #contactform input,
 #contactform textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
   font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+#contactform input:focus,
+#contactform textarea:focus {
+  outline: none;
+  border-color: #007bff;
 }
 
 #contactform button {
   padding: 12px;
   background-color: #007bff;
-  color: rgb(246, 235, 235);
+  color: #ffffff;
   border: none;
-  border-radius:6px;
+  border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 #contactform button:hover {
   background-color: #0056b3;
-}}
+}
