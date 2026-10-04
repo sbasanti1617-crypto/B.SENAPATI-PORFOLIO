@@ -1,21 +1,25 @@
-body{
-        .box{
-            display: flex;
-        }
-        div{
-            padding: 20px;
-            border: 2px solid black;
-            width: 500px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-        body {
-  background-color:rgb(212, 249, 249);
-  background-size: cover;
-  background-position:cover;
-  background-repeat: no-repeat;
-  text-align:justify;
+body {
+  font-family: sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
+
+.box {
+  display: flex;
+}
+
+div {
+  padding: 20px;
+  border: 2px solid black;
+  width: 500px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .cards-container { 
   display: flex; 
   gap: 20px; 
@@ -27,34 +31,27 @@ body{
   background: #f8f4f4;
   border: 1px solid #ccc;
 }
-header{
-    position:fixed;
-    z-index:1;
-    width:100%;
-    background-color:rgb(198, 237, 237);
-    padding:10px 0;
-    top:0;
-    left:o;
-}
-header ul{
-    list-style:none;
-    display:flex;
-    margin:0;
-    padding:0;
-    justify-content:center;
 
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(198, 237, 237);
+  padding: 10px 0;
+  top: 0;
+  left: 0;
 }
-header ul li{
-    padding:0 30px;
-}
-body {
-  font-family: sans-serif;
-  background-color: #f4f6f8;
+
+header ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+header ul li {
+  padding: 0 30px;
 }
 
 #contactform {
@@ -96,4 +93,4 @@ body {
 
 #contactform button:hover {
   background-color: #0056b3;
-}}
+}
