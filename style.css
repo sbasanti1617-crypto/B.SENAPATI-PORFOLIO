@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   background-color: #f4f6f8;
   display: flex;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   min-height: 100vh;
   margin: 0;
@@ -47,7 +47,7 @@ header ul {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content:top;
 }
 
 header ul li {
